@@ -1,0 +1,85 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#ffd166;
+  --muted:#9aa4b2;
+  --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: radial-gradient(circle at 10% 10%, rgba(255,209,102,0.06), transparent 10%),
+              linear-gradient(180deg, #071022 0%, #071733 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+  color: #e6eef6;
+}
+
+.card{
+  width:100%;
+  max-width:720px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:18px;
+  padding:2rem;
+  box-shadow: 0 10px 30px rgba(3,10,18,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.card-header h1{
+  margin:0 0 6px 0;
+  font-family: 'Playfair Display', serif;
+  font-weight:700;
+  font-size:1.9rem;
+  letter-spacing: -0.02em;
+}
+.subtitle{margin:0;color:var(--muted);font-size:0.95rem}
+
+.verse-area{
+  margin:1.6rem 0;
+  padding:1.6rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  border-radius:12px;
+  min-height:140px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.verse{
+  margin:0;
+  font-size:1.3rem;
+  line-height:1.5;
+  font-family: 'Playfair Display', serif;
+  transition: transform 260ms ease, opacity 260ms ease;
+}
+.reference{margin-top:0.8rem;color:var(--muted);font-size:0.95rem}
+
+.controls{display:flex;gap:0.6rem;flex-wrap:wrap}
+.btn{
+  background:var(--glass);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:0.6rem 0.9rem;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+.btn.primary{
+  background: linear-gradient(90deg,var(--accent), #ffb86b);
+  color:#071022;
+  box-shadow: 0 6px 18px rgba(255,177,90,0.12);
+  border:none;
+}
+
+.btn:active{transform:translateY(1px)}
+
+.credit{margin-top:1rem;color:var(--muted);font-size:0.85rem}
+
+@media (max-width:500px){
+  .card{padding:1.2rem}
+  .verse{font-size:1.05rem}
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Losowy Werset Biblijny</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card-header">
+      <h1>Losowy Werset Biblijny</h1>
+      <p class="subtitle">Naciśnij przycisk, aby wylosować losowy Werset ✨</p>
+    </header>
+
+    <section class="verse-area" aria-live="polite">
+      <blockquote id="verse" class="verse">Wciśnij przycisk, aby wylosować Werset.</blockquote>
+      <div id="reference" class="reference"></div>
+    </section>
+
+    <div class="controls">
+      <button id="drawBtn" class="btn primary">Losuj Werset</button>
+    </div>
+
+    <footer class="credit">• Rozprzestrzeniajmy Słowo Boże •</footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
